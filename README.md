@@ -235,33 +235,7 @@ Temporarily saves changes in a stack so you can work on something else, then git
 
 git rm <file>
 
-Remove file from working tree and index (staged for deletion).
 
-git tag <tagname>
-
-Create a tag on current commit (useful for releases).
-
-5. Typical Git Workflow (step-by-step)
-
-git clone <url> (if starting from remote) or git init (if starting locally).
-
-git checkout -b feature/my-feature — create a feature branch.
-
-Make changes to files locally.
-
-git status — check what changed.
-
-git add <file> or git add . — stage changes.
-
-git commit -m "Short message about changes" — commit locally.
-
-git pull origin main — update your branch with latest remote changes (resolve conflicts if any).
-
-git push origin feature/my-feature — push branch to remote.
-
-Create a Pull Request (PR) on GitHub/GitLab to merge branch to main.
-
-After PR approved, git merge or use platform UI to merge.
 
 git checkout main then git pull and git branch -d feature/my-feature to delete local branch.
 
